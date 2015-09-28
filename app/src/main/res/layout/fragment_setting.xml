@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whitebg">
+
+   <CheckBox
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_marginLeft="30dp"
+       android:layout_marginTop="50dp"
+       android:id="@+id/chk_allownoti"
+       android:text="Autoriser les notifications"
+       android:textSize="16dp"
+       android:textStyle="bold"
+       android:textColor="@color/royal_blue"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_thrshld"
+        android:text="Prévenir quand un produit expire à partir de (nombre de jour) :"
+        android:layout_below="@+id/chk_allownoti"
+        android:layout_alignLeft="@+id/chk_allownoti"
+        android:layout_marginTop="30dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/royal_blue"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@drawable/txt2"
+        android:layout_below="@+id/tv_thrshld"
+        android:layout_marginTop="15dp"
+        android:id="@+id/et_days"
+        android:inputType="number"
+        android:layout_alignRight="@+id/tv_thrshld"
+        android:textColorHint="@color/grey"
+        android:text="10"
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_days"
+        android:text="jour(s)"
+        android:layout_below="@+id/tv_thrshld"
+        android:layout_alignTop="@+id/et_days"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/days_left_val"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/et_days"
+        android:textColor="@color/royal_blue"
+        android:layout_marginLeft="10dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/update_setting"
+        android:layout_below="@+id/et_days"
+        android:background="@drawable/custom_addprobtn"
+        android:text="Mis à jour"
+        android:layout_alignLeft="@+id/tv_thrshld"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        />
+
+
+
+
+
+</RelativeLayout>

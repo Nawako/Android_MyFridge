@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/contentbg"
+    >
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/noti_productitemimg"
+        android:src="@drawable/dp"
+        android:layout_margin="10dp"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/noti_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="Nom du produit"
+        android:layout_toRightOf="@+id/noti_productitemimg"
+        android:layout_alignTop="@+id/noti_productitemimg"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/days_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:textSize="15sp"
+        android:text="Jour(s) restant(s) : "
+        android:layout_toRightOf="@+id/noti_productitemimg"
+        android:layout_alignLeft="@+id/noti_product_name"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/noti_product_name"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/days_left_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:textSize="16sp"
+        android:text="5 "
+        android:layout_alignBottom="@+id/days_left"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+       />
+    <TextView
+        android:id="@+id/noti_product_added"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:text="Date d'ajout : "
+        android:layout_toRightOf="@+id/noti_productitemimg"
+        android:layout_alignLeft="@+id/noti_product_name"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/days_left"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>

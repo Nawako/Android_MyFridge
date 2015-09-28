@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_rectangle"
+    android:padding="15dp"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/productitemimg"
+        android:src="@drawable/dp"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="Nom du produit     "
+        android:layout_toRightOf="@+id/productitemimg"
+        android:layout_alignTop="@+id/productitemimg"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/product_expiry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:text="Date d'expiration :"
+        android:layout_toRightOf="@+id/productitemimg"
+        android:layout_alignLeft="@+id/product_name"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/product_name"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/product_added"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:text="Date d'ajout :"
+        android:layout_toRightOf="@+id/productitemimg"
+        android:layout_alignLeft="@+id/product_name"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/product_expiry"
+        android:textStyle="bold"/>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/productitemimg"
+        android:id="@+id/btn_pro_edit"
+        android:text="Editer"
+        android:background="@color/royal_blue"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:layout_alignLeft="@+id/productitemimg"/>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/btn_pro_edit"
+        android:id="@+id/btn_pro_delete"
+        android:layout_alignBottom="@+id/btn_pro_edit"
+        android:background="@color/red"
+        android:text="Supprimer"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+/>
+
+
+
+
+
+</RelativeLayout>

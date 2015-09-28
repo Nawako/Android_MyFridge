@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/draweritemimg"
+        android:src="@drawable/home"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/itemtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:textColor="#0B4475"
+        android:textSize="15sp"
+        android:text="Accueil"
+        android:layout_toRightOf="@+id/draweritemimg"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_noti"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/noti_circle"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:text="12"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

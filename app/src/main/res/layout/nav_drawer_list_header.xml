@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/lay_header"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:background="@drawable/menu_bg"
+        android:id="@+id/layout1">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/dpimg"
+            android:src="@drawable/dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#B466e1fb"
+            android:layout_alignParentBottom="true"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_header_username"
+                android:text="Nom d'utilisateur"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/navy_blue"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:paddingTop="5dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_header_userdetail"
+                android:text="Détails utilisateur"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/navy_blue"
+                android:textSize="13dp"
+                android:padding="5dp"
+                android:layout_below="@+id/tv_header_username">
+            </TextView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tv_header_userdetail"
+                android:background="@color/white"></View>
+        </RelativeLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>

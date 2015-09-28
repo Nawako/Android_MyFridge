@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whitebg"
+    android:padding="5dp">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/btn_ad_product"
+        android:layout_centerHorizontal="true"
+        android:text="Ajouter un produit"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@drawable/custom_addprobtn"/>
+
+   <ListView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/lv_products"
+       android:divider="@color/white"
+       android:dividerHeight="2dp"
+       android:layout_below="@+id/btn_ad_product"
+       android:layout_marginTop="5dp">
+       </ListView>
+
+</RelativeLayout>

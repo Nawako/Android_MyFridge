@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whitebg"
+    
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/product_img"
+      
+        android:layout_centerHorizontal="true"
+       android:src="@drawable/dp"
+        android:padding="15dp"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:id="@+id/product_name"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/product_img"
+         android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_et"
+        android:hint="Nom"
+        android:singleLine="true"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="15dp"
+        android:textColor="@color/royal_blue"
+        android:textColorHint="@color/royal_blue"/>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:id="@+id/product_expiry_date"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/product_name"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_et"
+        android:hint="Date d'expiration"
+        android:singleLine="true"
+        android:editable="false"
+        android:paddingLeft="15dp"
+        android:textColor="@color/royal_blue"
+        android:textColorHint="@color/royal_blue"
+        android:layout_marginTop="15dp"
+        />
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:id="@+id/product_price"
+        android:layout_below="@+id/product_expiry_date"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_et"
+        android:hint="Prix en Euros"
+        android:singleLine="true"
+        android:inputType="number"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="15dp"
+        android:textColor="@color/royal_blue"
+        android:textColorHint="@color/royal_blue"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/des_tv"
+        android:layout_below="@+id/product_price"
+        android:textColor="@color/royal_blue"
+        android:layout_alignLeft="@+id/product_price"
+        android:text="Description :"
+        android:textSize="16dp"
+        android:layout_marginTop="15dp"/>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/description"
+        android:layout_below="@+id/des_tv"
+        android:minLines="3"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_et"
+        android:paddingLeft="15dp"
+        android:textColor="@color/royal_blue"
+        android:textColorHint="@color/royal_blue"
+        android:layout_marginTop="15dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/btn_add_prod"
+        android:layout_below="@+id/description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button"
+        android:text="Ajouter le produit"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_below="@+id/btn_add_prod"
+        android:layout_marginTop="60dp"></View>
+    </RelativeLayout>
+    </ScrollView>
+
+        </RelativeLayout>
+
+
+
+
