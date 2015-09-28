@@ -43,7 +43,7 @@ public class FragmentNotification extends Fragment {
         this.mActivity = getActivity();
         rootview = inflater.inflate(R.layout.fragment_notification, null);
         noti_lv = (ListView) rootview.findViewById(R.id.lv_notification);
-
+        setHasOptionsMenu(true);
 
         return rootview;
 
@@ -78,7 +78,7 @@ public class FragmentNotification extends Fragment {
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
 
-        inflater.inflate(R.menu.custom_menu, menu);
+    //    inflater.inflate(R.menu.custom_menu, menu);
         super.onCreateOptionsMenu(menu, inflater);
     }
 

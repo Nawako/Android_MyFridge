@@ -38,6 +38,7 @@ public class FragmentSetting extends Fragment
         btn_updateSettings=(Button)rootview.findViewById(R.id.update_setting);
         threshhold=(EditText)rootview.findViewById(R.id.et_days);
         allowNoti=(CheckBox)rootview.findViewById(R.id.chk_allownoti);
+        setHasOptionsMenu(false);
         return rootview;
 
 

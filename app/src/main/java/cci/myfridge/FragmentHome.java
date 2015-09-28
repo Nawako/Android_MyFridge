@@ -66,7 +66,8 @@ public class FragmentHome extends Fragment
 
             test = bundle.getString("SendFromNotification", "");
         }
-            return rootview;
+        setHasOptionsMenu(true);
+        return rootview;
  }
 
     @Override
@@ -164,8 +165,8 @@ public class FragmentHome extends Fragment
     }
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-
-        inflater.inflate(R.menu.custom_menu, menu);
+        if (menu.size() == 0)
+            inflater.inflate(R.menu.custom_menu, menu);
         super.onCreateOptionsMenu(menu, inflater);
     }
 
@@ -180,7 +181,7 @@ public class FragmentHome extends Fragment
                         @Override
                         public int compare(ProductsClass productsClass1, ProductsClass productsClass2) {
 
-                            return productsClass1.getProduct_added_date().compareTo(productsClass2.getProduct_added_date());
+                            return productsClass1.getProduct_expiry_date().compareTo(productsClass2.getProduct_expiry_date());
                         }
                     });
                     // Raffraîchit la liste après le tri

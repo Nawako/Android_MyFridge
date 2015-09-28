@@ -62,6 +62,7 @@ public class FragmentProfile extends Fragment implements View.OnClickListener {
         tv_phno=(EditText)rootview.findViewById(R.id.phno_val);
         tv_email=(EditText)rootview.findViewById(R.id.email_val);
         btn_editProfile=(Button)rootview.findViewById(R.id.btn_edit_profile);
+        setHasOptionsMenu(false);
         return rootview;
 
 
